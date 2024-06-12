@@ -1,9 +1,7 @@
-<img width="1791" alt="image" src="https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/assets/166881701/b8def82d-f35d-40d8-ba0e-b9e3bf269a3e"><p align="center">
 <img src=https://img.shields.io/github/stars/SilviaKadeh/pancake-predict-bot-UI-Supported?style=for-the-badge&logo=appveyor&color=blue />
 <img src=https://img.shields.io/github/forks/SilviaKadeh/pancake-predict-bot-UI-Supported?style=for-the-badge&logo=appveyor&color=blue />
 <img src=https://img.shields.io/github/issues/SilviaKadeh/pancake-predict-bot-UI-Supported?style=for-the-badge&logo=appveyor&color=informational />
 <img src=https://img.shields.io/github/issues-pr/SilviaKadeh/pancake-predict-bot-UI-Supported?style=for-the-badge&logo=appveyor&color=informational />
-</p>
   
 # 🔮 PancakeSwap Prediction Bot UI v9.0.1 🚀 
 
