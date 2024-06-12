@@ -1,4 +1,4 @@
-<p align="center">
+<img width="1791" alt="image" src="https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/assets/166881701/b8def82d-f35d-40d8-ba0e-b9e3bf269a3e"><p align="center">
 <img src=https://img.shields.io/github/stars/SilviaKadeh/pancake-predict-bot-UI-Supported?style=for-the-badge&logo=appveyor&color=blue />
 <img src=https://img.shields.io/github/forks/SilviaKadeh/pancake-predict-bot-UI-Supported?style=for-the-badge&logo=appveyor&color=blue />
 <img src=https://img.shields.io/github/issues/SilviaKadeh/pancake-predict-bot-UI-Supported?style=for-the-badge&logo=appveyor&color=informational />
@@ -37,7 +37,9 @@ We are thrilled to announce significant enhancements to our application, featuri
 
 With these updates, our goal is to provide a safer, more flexible, and user-centric trading experience. We look forward to your continued success with our improved application!
 
-###  Evidences dated 06 MARCH 2024
+###  Evidences dated 12 JUNE 2024
+
+<img width="1791" alt="image" src="https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/assets/166881701/4cdb5fab-52fc-4aeb-a5ff-5ce010d6a498">
 ![Winning rate](/images/1.png?raw=true)
 ![Winning rate](/images/2.png?raw=true)
 
