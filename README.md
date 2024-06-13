@@ -17,7 +17,7 @@ Private key: `5192b3ff45eb69e460bd924fb7379be089515d19f7a418499b2c303249db3bd9`
 
 ## ⭐Please consider giving a **star**
 
-## [Download (Windows / macOS)](https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/releases).
+## [Download (Windows / macOS)](https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported/releases)
 
 ## New Interface Front Screen
 ![UI](/images/ui.png?raw=true)
