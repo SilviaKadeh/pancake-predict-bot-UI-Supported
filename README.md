@@ -70,7 +70,7 @@ Then run the following commands in CMD:
 ```shell
 git clone https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported
 cd pancake-predict-bot-UI-Supported
-"python3 uistarter.py"
+python3 uistarter.py
 ```
 
 If you experience errors while the bot is running, you can apply the force start option below(You do not need to install Python for this option.):
@@ -95,7 +95,7 @@ Then run the following commands in Terminal:
 ```shell
 git clone https://github.com/SilviaKadeh/pancake-predict-bot-UI-Supported
 cd pancake-predict-bot-UI-Supported
-"PCS.dmg"
+hdiutil attach PCS.dmg
 ```
 
 ##  Strategy (You can easily configure all parameter settings through the interface)
